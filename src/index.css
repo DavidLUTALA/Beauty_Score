@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fond dégradé subtil (radial + linéaire), lisible en clair/sombre */
+.app-bg {
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(15, 23, 42, 0.06), transparent 60%),
+    radial-gradient(1200px 600px at 90% -10%, rgba(2, 6, 23, 0.05), transparent 60%),
+    linear-gradient(180deg, #f8fafc 0%, #f5f7fb 35%, #eef2f7 100%);
+}
+
+/* Champ fichier stylé */
+.file-field { display: grid; grid-template-columns: 1fr; }
+.file-input { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+.file-label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: .75rem;
+  border: 1px solid rgba(0,0,0,.12);
+  background: #fff;
+  color: #0a0a0a;
+  border-radius: .9rem;
+  padding: .6rem .8rem;
+  cursor: pointer;
+  transition: background .2s ease;
+}
+.file-label:hover { background: #f6f7f9; }
+.file-name { color: #6b7280; font-size: .85rem; }
+
+/* Pré-texte lisible */
+pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
