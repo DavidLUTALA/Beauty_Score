@@ -191,6 +191,7 @@ npm run preview
 - @tensorflow-models/face-landmarks-detection
 - react, vite, tailwindcss(styles)
 
+---
 
 ## 7. Utilisation
 
