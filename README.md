@@ -6,6 +6,8 @@ Cette application web évalue, à partir d’une photographie faciale de face, p
 
 Tout le calcul s’effectue **localement dans le navigateur** (TensorFlow.js + MediaPipe FaceMesh). Aucune image n’est transmise à un serveur.
 
+![Alt text](img/img00.png)
+
 ---
 
 ## 2. Principes scientifiques et méthodologie
@@ -88,6 +90,8 @@ dépend des écarts aux pivots 50/60/70
 - **Erreur de landmarks** : le modèle n’est pas médical.  
 - **Un seul visage traité**.
 
+![Alt text](img/img01.png)
+
 ---
 
 ## 4. Reproductibilité
@@ -96,6 +100,7 @@ dépend des écarts aux pivots 50/60/70
 - Versionnage méthodologique.  
 - Affichage des **mesures brutes + ratios + erreurs relatives**.
 
+![Alt text](img/img02.png)
 ---
 
 ## 5. Architecture technique
@@ -207,6 +212,7 @@ npm run preview
 
 👉 Astuce : privilégier une image bien éclairée, sans inclinaison, visage centré.
 
+![Alt text](img/img03.png)
 ---
 
 ## 8. Validation et tests
