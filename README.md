@@ -55,8 +55,7 @@ Ces contrôles préviennent des cas extrêmes (flou ou sous/surexposition).
 **Conversion score :**
 
 ![equation](https://latex.codecogs.com/png.latex?S_%7B%5Cphi%7D%20%3D%20100%20%5Ccdot%20exp%28-5%20%5Coverline%7Be%7D%29)
-markdown
-Copier le code
+
 
 ## 2.7. Score de symétrie
 
