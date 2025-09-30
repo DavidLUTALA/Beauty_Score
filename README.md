@@ -97,6 +97,7 @@ Arborescence :
 
 # Arborescence du projet
 
+```
 harmonie-faciale/
 ├── node_modules/
 ├── public/
@@ -132,7 +133,7 @@ harmonie-faciale/
 ├── vite.config.ts
 ├── README.md
 └── LICENSE
-
+```
 
 
 
