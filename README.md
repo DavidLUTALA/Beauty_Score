@@ -42,34 +42,47 @@ Ces contrôles préviennent des cas extrêmes (flou ou sous/surexposition).
 4. Nez → menton / Longueur visage ≈ **0.618**  
 5. Hauteur lèvres / Largeur bouche ≈ **0.20**
 
-### 2.6. Score « Nombre d’or »
-- **Erreur relative** \( e_i = |r_i - t_i| / t_i \)  
-- Moyenne des erreurs → \(\overline{e}\)  
-- Conversion score :
-\[
-S_{\phi} = 100 \cdot \exp(-5 \cdot \overline{e})
-\]
+## 2.6. Score « Nombre d’or »
+
+**Erreur relative :**
+
+![equation](https://latex.codecogs.com/png.latex?e_i%20%3D%20%7Cr_i%20-%20t_i%7C%20%2F%20t_i)
+
+**Moyenne des erreurs :**
+
+![equation](https://latex.codecogs.com/png.latex?%5Coverline%7Be%7D%20%3D%20%5Cfrac%7B1%7D%7Bn%7D%20%5Csum_i%20e_i)
+
+**Conversion score :**
+
+![equation](https://latex.codecogs.com/png.latex?S_%7B%5Cphi%7D%20%3D%20100%20%5Ccdot%20exp%28-5%20%5Coverline%7Be%7D%29)
+markdown
+Copier le code
 
 ## 2.7. Score de symétrie
 
 ![equation](https://latex.codecogs.com/png.latex?S_%7Bsym%7D%20%3D%20%5Cmax%280%2C%20100%20-%201000%20%5Ccdot%20%5Ctext%7Bmean%7D%28%7Cx_i%20-%20%281-x_j%29%7C%29%29)
 
 
-### 2.8. Score d’harmonie et indices globaux
-- **Harmonie** :
-\[
-H = 0.4\,S_{\text{sym}} + 0.4\,S_{\phi} + 0.2\,S_{\text{yeux}}
-\]
-- **Indice global (1–10)** :
-\[
-G = \text{clip}\Big(4 + 9 \cdot \big(\tfrac{0.35\,S_{\text{sym}} + 0.25\,S_{\phi} + 0.4\,H}{100}\big)^{1.8}, 1, 10\Big)
-\]
-- **Originalité (1–10)** : dépend des écarts aux pivots 50/60/70.
+## 2.8. Score d’harmonie et indices globaux
 
-### 2.9. Incertitude et IC 95 %
-- Bootstrap (bruit gaussien \(\sigma = 0.003\)).  
-- Recalcul \(N=40\) fois → moyenne ± IC95.  
-- Permet d’évaluer la **robustesse** des résultats.
+**Harmonie :**
+
+![equation](https://latex.codecogs.com/png.latex?H%20%3D%200.4%20S_%7Bsym%7D%20%2B%200.4%20S_%7B%5Cphi%7D%20%2B%200.2%20S_%7Byeux%7D)
+
+**Indice global (1–10) :**
+
+![equation](https://latex.codecogs.com/png.latex?G%20%3D%20%5Ctext%7Bclip%7D%284%20%2B%209%20%5Ccdot%20%28%200.35S_%7Bsym%7D%20%2B%200.25S_%7B%5Cphi%7D%20%2B%200.4H%29%5E%7B1.8%7D%2C%201%2C%2010%29)
+
+**Originalité (1–10) :**
+
+dépend des écarts aux pivots 50/60/70
+
+## 2.9. Incertitude et IC 95 %
+
+- Bootstrap (bruit gaussien ![equation](https://latex.codecogs.com/png.latex?%5Csigma%20%3D%200.003))
+- Recalcul (N=40) → moyenne ± IC95
+- Permet d’évaluer la robustesse des résultats
+
 
 ---
 
