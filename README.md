@@ -250,7 +250,7 @@ Exemple de citation informelle :
 
 ---
 
-## 14. Avertissement
+## 1. Avertissement
 
 Cette application **ne constitue ni un avis médical, ni un instrument de diagnostic**.  
 Elle ne “mesure pas la beauté” ; elle décrit des propriétés géométriques d’une image, sous hypothèses et avec incertitudes.  
