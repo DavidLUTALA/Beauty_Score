@@ -19,6 +19,8 @@ Tout le calcul s’effectue **localement dans le navigateur** (TensorFlow.js + M
   - Front supérieur (10), menton (152), commissures labiales (61, 291), coins latéraux du visage (234, 454), yeux (133, 362), lèvres (13, 14), pointe du nez (1).
 - Hypothèse : visage frontal, expression neutre, éclairage homogène. Les écarts à cette hypothèse augmentent l’incertitude.
 
+![Alt text](img/img05.png)
+
 ### 2.2. Contrôles qualité a priori
 - **Netteté (proxy)** : variance d’un gradient (approximation du Laplacien). Seuil empirique \(> 1500\).
 - **Exposition** : luminance moyenne dans \([60,200]\) (8 bits).  
