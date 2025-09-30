@@ -50,10 +50,10 @@ Ces contrôles préviennent des cas extrêmes (flou ou sous/surexposition).
 S_{\phi} = 100 \cdot \exp(-5 \cdot \overline{e})
 \]
 
-### 2.7. Score de symétrie
-\[
-S_{\text{sym}} = \max\!\left(0,\; 100 - 1000 \cdot \text{mean}\big(|x_i - (1-x_j)|\big)\right)
-\]
+## 2.7. Score de symétrie
+
+![equation](https://latex.codecogs.com/png.latex?S_%7Bsym%7D%20%3D%20%5Cmax%280%2C%20100%20-%201000%20%5Ccdot%20%5Ctext%7Bmean%7D%28%7Cx_i%20-%20%281-x_j%29%7C%29%29)
+
 
 ### 2.8. Score d’harmonie et indices globaux
 - **Harmonie** :
