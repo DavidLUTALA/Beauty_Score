@@ -1,4 +1,4 @@
-# Rapport d’harmonie faciale — README
+# Rapport d’harmonie faciale
 
 ## 1. Objet du projet
 
