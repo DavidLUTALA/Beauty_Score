@@ -95,6 +95,8 @@ G = \text{clip}\Big(4 + 9 \cdot \big(\tfrac{0.35\,S_{\text{sym}} + 0.25\,S_{\phi
 
 Arborescence :
 
+# Arborescence du projet
+
 harmonie-faciale/
 ├── node_modules/
 ├── public/
@@ -130,6 +132,7 @@ harmonie-faciale/
 ├── vite.config.ts
 ├── README.md
 └── LICENSE
+
 
 
 
@@ -231,16 +234,6 @@ npm run preview
 
 Exemple de citation informelle :  
 > “Rapport d’harmonie faciale (v1.2.0). Application Web, TensorFlow.js + MediaPipe FaceMesh, analyse morphométrique et IC 95 % par bootstrap.”
-
----
-
-## 13. Feuille de route (suggestions)
-
-- Export **PDF** du rapport (mesures, ratios, IC, profils).  
-- Mode sombre automatique (préférence système).  
-- Web Worker pour le bootstrap d’incertitude.  
-- Calibration par jeu synthétique (visages paramétriques) pour tester la justesse des ratios.  
-- Support multi-visage (sélection du sujet).
 
 ---
 
